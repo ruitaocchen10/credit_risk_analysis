@@ -16,9 +16,5 @@ def profile_dataset(df, dataset_name):
     print(f"Duplicate Rows: {df.duplicated().sum()}") #duplicate check
     print("\n")
 
-    print(f"Columns: {df.columns.tolist()}")
-
-
-
 df = pd.read_csv("/Users/ruitao/credit_risk_analysis/data/raw/application_train.csv")
 profile_dataset(df, "Application Train")
